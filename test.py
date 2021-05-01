@@ -6,7 +6,7 @@ client_secret = "sUhaNKGnTxKNQvNNQxFwmD5OkvfAPANIzQqSJAVu"
 lang = "Kor" # 언어 코드 ( Kor, Jpn, Eng, Chn )
 url = "https://naveropenapi.apigw.ntruss.com/recog/v1/stt?lang=" + lang
 
-filename = str('KsponSpeech_00{0:04d}'.format(1))+str(".wav")
+filename = str('KsponSpeech_00{0:04d}'.format(996))+str(".wav")
 data = open('./wav/'+filename, 'rb')
 headers = {
     "X-NCP-APIGW-API-KEY-ID": client_id,
