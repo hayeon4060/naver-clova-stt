@@ -1,12 +1,12 @@
 import requests
 import json
-
+import clova_key
 
 class ClovaSpeechClient:
     # Clova Speech invoke URL
     invoke_url = 'https://clovaspeech-gw.ncloud.com/external/v1/523/c8ae7335d31de25de0c14cb99dc6612222449f07440535b95fb7909035d0deb7'
     # Clova Speech secret key
-    secret = '175f4be598ec43e9bc24e9b28e8a2dfd'
+    secret = clova_key.secret
 
     
 
@@ -98,7 +98,7 @@ class ClovaSpeechClient:
 if __name__ == '__main__':
     # res = ClovaSpeechClient().req_url(url='http://example.com/media.mp3', completion='sync')
     # res = ClovaSpeechClient().req_object_storage(data_key='data/media.mp3', completion='sync')
-    res = ClovaSpeechClient().req_upload(file='./rec/record1.mp3', completion='sync')
+    res = ClovaSpeechClient().req_upload(file='./wav/멘토.wav', completion='sync')
     print(res.text)
 
     
